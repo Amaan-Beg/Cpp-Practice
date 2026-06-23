@@ -36,10 +36,20 @@ public:
                 freq--;
             }
         }
-        return ans;
+        int count = 0;
+        for(int val : nums){
+            if (val == ans)
+            {
+                count++;
+            }
+            
+            if (count > n/2) => ans
+            else => -1
+            
+            return ans;
+        }
     }
 };
-
 
 /*
 Moore's Voting Algorithm
