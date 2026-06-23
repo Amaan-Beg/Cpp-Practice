@@ -37,16 +37,17 @@ public:
             }
         }
         int count = 0;
-        for(int val : nums){
-            if (val == ans)
-            {
-                count++;
-            }
-            
-            if (count > n/2) => ans
-            else => -1
-            
-            return ans;
+
+for(int val : nums){
+    if(val == ans){
+        count++;
+    }
+}
+
+if(count > n/2)
+    return ans;
+
+return -1;
         }
     }
 };
