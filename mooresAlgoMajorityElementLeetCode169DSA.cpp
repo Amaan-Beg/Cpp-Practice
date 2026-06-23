@@ -87,6 +87,25 @@ Ab freq 0 hai, isliye next element (1) naya candidate banega.
 Pure array ke end tak jo candidate bachta hai,
 wahi majority element hota hai.
 
+// Verification Pass
+// First loop se hume sirf ek potential majority candidate milta hai.
+// Ye 100% guarantee nahi karta ki candidate actually majority hai.
+//
+// Isliye second loop me candidate ki actual frequency count karte hain.
+//
+// Agar candidate n/2 se zyada baar aaya hai,
+// to wahi majority element hai, return ans.
+//
+// Agar n/2 se zyada baar nahi aaya,
+// to majority element exist nahi karta, return -1.
+//
+// Example:
+// [1,2,3,4]
+//
+// First pass ke baad koi bhi element candidate ban sakta hai,
+// lekin koi bhi element n/2 se zyada baar nahi aata.
+// Verification pass is case ko detect karta hai.
+
 Time Complexity: O(n)
 Space Complexity: O(1)
 */
