@@ -20,38 +20,55 @@ n == nums.length
 1 <= n <= 5 * 104
 -109 <= nums[i] <= 109
 The input is generated such that a majority element will exist in the array.*/
-class Solution {
+class Solution
+{
 public:
-    int majorityElement(vector<int>& nums) {
+    int majorityElement(vector<int> &nums)
+    {
         int n = nums.size();
-        int freq =0, ans = 0;
-        for(int i =0; i <n; i++){
-            if(freq == 0){
+        int freq = 0, ans = 0;
+        for (int i = 0; i < n; i++)
+        {
+            if (freq == 0)
+            {
                 ans = nums[i];
             }
-            if(ans == nums[i]){
+            if (ans == nums[i])
+            {
                 freq++;
             }
-            else{
+            else
+            {
                 freq--;
             }
         }
         int count = 0;
+        for (int val : nums)
+        {
+            if (val == ans)
+            {
+                count++;
+            }
 
-for(int val : nums){
-    if(val == ans){
-        count++;
-    }
-}
-
-if(count > n/2)
-    return ans;
-
-return -1;
+            if (count > n / 2)
+                = > ans else = > -1
         }
+        int count = 0;
+
+        for (int val : nums)
+        {
+            if (val == ans)
+            {
+                count++;
+            }
+        }
+
+        if (count > n / 2)
+            return ans;
+
+        return -1;
     }
 };
-
 /*
 Moore's Voting Algorithm
 
